@@ -6,7 +6,7 @@
 
 ## Overview
 
-This repository contains the implementation of our research on **Quantitative Analysis of Visual Guidance in Level Transitions Using Multimodal Visual Metrics**, presented at the 2025 IEEE Conference on Games (CoG).
+This repository contains the implementation of our research on [**Quantitative Analysis of Visual Guidance in Level Transitions Using Multimodal Visual Metrics**](https://doi.org/10.1109/COG64752.2025.11114135), presented at the 2025 IEEE Conference on Games (CoG).
 
 Our work introduces a novel **bimodal quantitative framework** for evaluating visual guidance during level transitions in 3D role-playing games, specifically analyzing Dark Souls III. By integrating depth map analysis with RGB image sequence analysis, we provide measurable patterns for design feedback and procedural content generation.
 
@@ -18,13 +18,6 @@ Our work introduces a novel **bimodal quantitative framework** for evaluating vi
 - **Real-time Design Feedback**: Provides actionable insights for level designers
 - **Procedural Generation Objectives**: Establishes evaluation criteria for automated level creation
 
-## 📚 Research Paper
-
-**Title**: "Quantitative Analysis of Visual Guidance in Level Transitions Using Multimodal Visual Metrics"  
-**Authors**: Kaijie Xu, Clark Verbrugge  
-**Institution**: McGill University, Department of Computer Science  
-**Conference**: 2025 IEEE Conference on Games (CoG)  
-**DOI**: [10.1109/COG64752.2025.11114135](https://doi.org/10.1109/COG64752.2025.11114135)
 
 ## 🏗️ Architecture
 
@@ -71,7 +64,7 @@ src/
 
 ### Basic Usage
 
-#### 1. Depth Analysis (Geometric Constraints)
+#### 1. Depth Analysis 
 ```python
 from src.depth_analysis.depth_metrics_analysis import *
 
@@ -85,7 +78,7 @@ spatial_corr_x, spatial_corr_y = compute_spatial_correlation(depth_sequence)
 fov_mask = detect_fov_from_labels(depth_labels)
 ```
 
-#### 2. Color Analysis (Perceptual Cues)
+#### 2. Color Analysis 
 ```python
 from src.color_analysis.color_metrics_analysis import *
 
@@ -99,7 +92,7 @@ mean_lum = mean_luminance(color_image)
 dominant_colors = meanshift_dominant_colors(color_image)
 ```
 
-#### 3. Bimodal Integration (Core Innovation)
+#### 3. Bimodal Integration (Testing)
 ```python
 from src.bimodal_integration.bimodal_analysis import *
 
@@ -165,31 +158,6 @@ data/
 - **Bimodal Alignment**: How well spatial and chromatic cues work together
 - **Overall Quality Score**: Unified metric for transition assessment
 
-## 📈 Results and Validation
-
-Our framework successfully identifies measurable patterns in visual guidance:
-
-- **Well-designed transitions**: Show coordinated changes in spatial coverage and color complexity
-- **Poorly designed transitions**: Exhibit unusual variations or mismatched measurements
-- **Cross-modal synergy**: Strong correlation between geometric and perceptual guidance
-
-## 🎮 Applications
-
-### Level Design
-- **Real-time feedback** during design iteration
-- **Quality assessment** of existing levels
-- **Comparative analysis** between different design approaches
-
-### Procedural Generation
-- **Objective functions** for automated level creation
-- **Quality constraints** for generation algorithms
-- **Validation metrics** for generated content
-
-### Research and Education
-- **Quantitative validation** of design principles
-- **Comparative studies** across different games
-- **Educational tools** for level design courses
-
 ## 🤝 Contributing
 
 We welcome contributions to improve the framework:
@@ -215,35 +183,3 @@ If you use this code in your research, please cite our paper:
   doi={10.1109/COG64752.2025.11114135}
 }
 ```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Dark Souls III** development team for the game environment
-- **McGill University** for research support
-- **IEEE CoG 2025** conference committee
-- **OpenCV, scikit-learn, and TensorFlow** communities for excellent libraries
-
-## 📞 Contact
-
-- **Kaijie Xu**: kaijie.xu2@mail.mcgill.ca
-- **Clark Verbrugge**: clump@cs.mcgill.ca
-- **Institution**: McGill University, Department of Computer Science
-- **Project**: [GitHub Repository](https://github.com/yourusername/visual-metrics-game-level)
-
-## 🔮 Future Work
-
-We plan to extend this framework in several directions:
-
-- **Real-time analysis** for live level design sessions
-- **Multi-game validation** across different genres and styles
-- **Machine learning integration** for automated quality prediction
-- **Virtual reality support** for immersive design environments
-- **Collaborative design tools** for team-based level creation
-
----
-
-**Note**: This repository contains research code and is intended for academic and research purposes. For production use, please ensure proper testing and validation.

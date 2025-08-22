@@ -21,6 +21,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import cv2
 from scipy.stats import pearsonr, spearmanr
 from sklearn.metrics import mutual_info_score
 from sklearn.decomposition import PCA
