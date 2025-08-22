@@ -54,8 +54,8 @@ src/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/visual-metrics-game-level.git
-   cd visual-metrics-game-level
+   git clone https://github.com/Nortrom1213/Visual-Metrics.git
+   cd Visual-Metrics
    ```
 
 2. **Create virtual environment**
@@ -199,13 +199,6 @@ We welcome contributions to improve the framework:
 3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
 4. **Push** to the branch (`git push origin feature/amazing-feature`)
 5. **Open** a Pull Request
-
-### Development Guidelines
-
-- Follow PEP 8 style guidelines
-- Add comprehensive docstrings for new functions
-- Include unit tests for new features
-- Update documentation as needed
 
 ## 📝 Citation
 
