@@ -142,10 +142,6 @@ dmypy.json
 *.webm
 *.mkv
 
-# Data directories (keep structure but not actual data)
-data/*/
-!data/*/.gitkeep
-
 # Output directories
 output/*/
 !output/*/.gitkeep
